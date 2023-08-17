@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contoh Penggunaan AOS Library</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        background-color: #f7f7f7;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .card {
+        background-color: black;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 40px;
+        height: 400px;
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Animate On Scroll (AOS) Demo</h1>
+
+      <div class="card" data-aos="fade-up">
+        <h2>FADE UP</h2>
+      </div>
+
+      <div class="card" data-aos="fade-down">
+        <h2>FADE DOWN</h2>
+      </div>
+
+      <div class="card" data-aos="fade-in">
+        <h2>FADE IN</h2>
+      </div>
+
+      <div class="card" data-aos="flip-up">
+        <h2>FLIP UP</h2>
+      </div>
+
+      <div class="card" data-aos="flip-down">
+        <h2>FLIP DOWN</h2>
+      </div>
+
+      <div class="card" data-aos="zoom-out">
+        <h2>ZOOM OUT</h2>
+      </div>
+
+      <div class="card" data-aos="zoom-out-up">
+        <h2>ZOOM OUT UP</h2>
+      </div>
+
+      <div class="card" data-aos="zoom-out-down">
+        <h2>ZOOM OUT DOWN</h2>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
